@@ -9,42 +9,43 @@ html {font-size: 62.5%;}
 
 body {color: #000;}
 
+/* Wrapper */
 .content-wrapper {
     margin: 0 auto;
     width: 95%;
 }
 
-/* Alignement */
-
-.flex {display: flex;}
-
-  .column {flex-direction: column;  }
-  .row {flex-direction: row;}
-  .center {justify-content: center;}
-  .space-between {justify-content: space-between;}
-  .txt-center {text-align: center;}
-  .align-center {align-items: center;}
 
 /***********/
 /* Header */
 /*********/
 
-/* Navbar */
-.navbar {
-    z-index: 99;
+header {
     height: 5rem; width: 100%;
 }
 
 /* Logo */
-#logo {
-    font-family: 'Raleway', sans-serif; font-weight: 800;
+.logo {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-decoration: none;
 }
+
+
+/*********/
+/* Main */
+/*******/
+
+main {
+    margin-top: 10rem; margin-bottom: 10rem;
+}
+
 
 /************/
 /* Content */
 /**********/
 .grid {display: grid;}
+
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10 {position: relative;}
 
 .m1 {grid-area: m1;}
 .m2 {grid-area: m2;}
@@ -59,14 +60,62 @@ body {color: #000;}
 
 .gap-2-2 {gap: 2rem 2rem;}
 
+
+/***********/
+/* Footer */
+/*********/
+footer {
+    padding: 5rem;
+}
+
+  footer h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive; font-size: 10rem;
+  }
+
+
+/************/
+/* Overlay */
+/**********/
+.overlay {
+    color: transparent;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 100%; width: 100%;
+  }
+
+  .overlay:hover {
+    color: #000;
+    background-color: #19c3cf85;
+    transition: background-color 300ms linear;
+  }
+
+  .content-overlay {
+    position: absolute;
+    pointer-events: none;
+  }
+
+
 /********************/
 /* Background Image*/
 /******************/
 .w-100 {width: 100%;}
-
 .h-100 {height: 100%;}
 
 .cover {background-size: cover;}
+
+
+/***************/
+/* Alignement */
+/*************/
+
+.flex {display: flex;}
+
+  .column {flex-direction: column;  }
+  .row {flex-direction: row;}
+  .center {justify-content: center;}
+  .space-between {justify-content: space-between;}
+  .txt-center {text-align: center;}
+  .align-center {align-items: center;}
 
 
 /***********/
